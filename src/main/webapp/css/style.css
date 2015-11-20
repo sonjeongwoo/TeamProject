@@ -27,6 +27,14 @@
 	width:150px;
 	height:45px;
 }
+#signupBtn{
+	float:right;
+	width:80px;
+	height:25px;
+	border-radius:3px;
+	background-color:white;
+	margin-left:10px;
+}
 /*±‚¡∏ ≈€«√∏¥ CSS*/
 html {
 	width: 100%;

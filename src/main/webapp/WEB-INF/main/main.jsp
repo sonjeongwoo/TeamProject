@@ -93,6 +93,8 @@
 				</h1>
 				<div class="menu_block" style="padding-top:0px;">
 					<div id="loginDiv">
+						<button id="signupBtn">Sign Up</button>
+						&nbsp;&nbsp;
 						<button id="popoverBtn" type="button"
 							title="<input type='text' class='form-control' placeholder='ID'>
 							<br><input type='password' class='form-control' placeholder='Password'>
@@ -114,7 +116,7 @@
 			</div>
 		</div>
 	</header>
-	
+	<!--============================= body ==================================-->
 	<tiles:insertAttribute name="body"/>
 	
 	<!--==============================footer=================================-->
