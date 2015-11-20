@@ -62,7 +62,7 @@
 		</div>		
 		<div class="page1_block">
 			<div class="container_12">
-				<%-- 
+				<%-- DB 구현 이후 사용
 				<c:forEach var="vo" items="${list }" varStatus="status">
 					<div class="grid_3">
 						<div class="box ic#{status.count} ">
@@ -167,7 +167,7 @@
 	</div>
 	<div class="content page1">
 		<div class="container_12">
-			<div class="grid_4 emp_box">
+			<div class="grid_4">
 			<h3>MVP 팀</h3>
 				<div class="grid_12">
 					<div>
