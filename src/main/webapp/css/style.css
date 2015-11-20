@@ -3,8 +3,31 @@
 @import "../css/skeleton.css";
 @import "../css/superfish.css";
 
-
-
+/**프로젝트 정의부분**/
+#loginDiv{
+	padding-bottom:42px;
+}
+#popoverBtn{
+	float:right;
+	width:80px;
+	height:25px;
+	border-radius:3px;
+	background-color:white;
+}
+.form-control{
+	border-radius:5px;
+	width:150px;
+}
+.loginBtn{
+	width:150px;
+	height:30px;
+	background-color:#efefef;
+}
+.fbLoginBtn{
+	width:150px;
+	height:45px;
+}
+/*기존 템플릿 CSS*/
 html {
 	width: 100%;
 }
@@ -243,13 +266,9 @@ er*/
 
 header {
 	display: block;
-	padding-top: 37px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-color: #322f2f;
-}
-
-header {
-	padding-bottom: 38px;
-
 }
 
 header h1 {

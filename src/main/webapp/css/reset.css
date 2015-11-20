@@ -40,5 +40,5 @@ embed {
 
 input[type=text], textarea {
 	outline: none;
-	border-radius: 0;
+	/* border-radius: 0; */
 }

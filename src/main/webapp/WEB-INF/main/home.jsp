@@ -8,7 +8,8 @@
 <title>Home</title>
 <meta charset="utf-8">
 <meta name="format-detection" content="telephone=no" />
-<link rel="icon" href="images/favicon.ico">
+<!-- js가 이미 main.jsp에 있어서 충돌되어서 주석처리합니다 -->
+<!-- <link rel="icon" href="images/favicon.ico">
 <link rel="shortcut icon" href="images/favicon.ico" />
 <link rel="stylesheet" media="screen" href="css/style.css">
 <link rel="stylesheet" href="css/camera.css">
@@ -23,11 +24,11 @@
 <script src="js/jquery.mobilemenu.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/camera.js"></script>
-<!--[if (gt IE 9)|!(IE)]><!-->
+[if (gt IE 9)|!(IE)]><!
 <script src="js/jquery.mobile.customized.min.js"></script>
-<!--<![endif]-->
+<![endif]
 <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
-<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script> -->
 </head>
 <body>
 <!-- 슬라이드 -->

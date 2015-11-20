@@ -13,7 +13,8 @@
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/camera.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/carousel.css">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/font-awesome.css">
-<script src="<%=request.getContextPath()%>/js/jquery.js"></script>
+<%-- <script src="<%=request.getContextPath()%>/js/jquery.js"></script> --%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/jquery-migrate-1.1.1.js"></script>
 <script src="<%=request.getContextPath()%>/js/script.js"></script>
 <script src="<%=request.getContextPath()%>/js/jquery.equalheights.js"></script>
@@ -27,6 +28,10 @@
 <!--<![endif]-->
 <script src="<%=request.getContextPath()%>/js/jquery.carouFredSel-6.1.0-packed.js"></script>
 <script src="<%=request.getContextPath()%>/js/jquery.touchSwipe.min.js"></script>
+<!-- BootStrap -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script>
 	$(document).ready(function() {
 		jQuery('#camera_wrap').camera({
@@ -38,8 +43,8 @@
 			navigation : true,
 			fx : 'simpleFade'
 		});
+		$('#popoverBtn').popover();
 	});
-
 	$(window).load(function() {
 		$('.carousel1').carouFredSel({
 			auto : false,
@@ -53,20 +58,15 @@
 				},
 				height : 'auto',
 				width : 940,
-
 			},
 			responsive : true,
-
 			scroll : 1,
-
 			mousewheel : false,
-
 			swipe : {
 				onMouse : true,
 				onTouch : true
 			}
 		});
-
 	});
 </script>
 <!--[if lt IE 8]>
@@ -91,7 +91,14 @@
 					<a href="<%=request.getContextPath()%>/main.do"><img src="images/logo.png"
 						alt="Prospect best opportunity to succeed"></a>
 				</h1>
-				<div class="menu_block">
+				<div class="menu_block" style="padding-top:0px;">
+					<div id="loginDiv">
+						<button id="popoverBtn" type="button"
+							title="<input type='text' class='form-control' placeholder='ID'>
+							<br><input type='password' class='form-control' placeholder='Password'>
+							<br><input type='button' class='loginBtn' value='Login'>" data-toggle="popover" data-placement="bottom" 
+							data-content="<img src='images/fbLoginBtn.png' class='fbLoginBtn'>" data-html="true">Login</button>
+					</div>
 					<!-- padding top 25px 지우고, 로그인 추가하시오 -->
 					<nav>
 						<ul class="sf-menu">
